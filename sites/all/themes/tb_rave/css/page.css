@@ -31,7 +31,7 @@
 }
 
 #main-wrapper .container {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #main-wrapper .container-inner {
@@ -54,7 +54,7 @@
 #header {
   clear: both;
   position: relative;
-  padding: 20px 0 24px;
+  padding: 10px 0 14px;
   background: url(../images/line-bg.gif) 0 100% repeat-x;
 }
 
