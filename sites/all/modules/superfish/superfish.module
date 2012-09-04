@@ -774,7 +774,12 @@ function theme_superfish($variables) {
   else {
     // Start caching the menu.
     $cache = array();
-    $cache['menu'] = menu_tree_all_data($menu_name);
+    $tree = menu_tree_all_data($menu_name);
+// Localize the tree.
+if (module_exists('i18n_menu')) {
+$tree = i18n_menu_localize_tree($tree);
+}
+$cache['menu'] = $tree;
 
     // For custom $menus and menus built all the way from the top-level we
     // don't need to "create" the specific sub-menu and we need to get the title
@@ -809,13 +814,18 @@ function theme_superfish($variables) {
     $depth = $sfsettings['depth'];
     $depth = ($sfsettings['depth'] > 0 && isset($cache['parent_depth'])) ? $cache['parent_depth'] + $depth : $depth;
     
-    $var = array(
-      'id' => $id,
-      'menu' => $cache['menu'],
-      'depth' => $depth,
-      'trail' => superfish_build_page_trail(menu_tree_page_data($menu_name)),
-      'sfsettings' => $sfsettings
-    );
+    $tree = menu_tree_page_data($menu_name);
+// Localize the tree.
+if (module_exists('i18n_menu')) {
+  $tree = i18n_menu_localize_tree($tree);
+}
+$var = array(
+  'id' => $id,
+  'menu' => $cache['menu'],
+  'depth' => $depth,
+  'trail' => superfish_build_page_trail($tree),
+  'sfsettings' => $sfsettings
+);
     if ($menu_tree = theme('superfish_build', $var)) {
       if ($menu_tree['content']) {
         // Add custom HTML codes around the main menu.

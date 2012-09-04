@@ -253,3 +253,17 @@ td.module,
 td.container td.category {
 }
 
+img.inline {
+	border: 1px solid #E2E2E2;
+	padding: 2px;
+}
+
+a.image-left { 
+    float: left; 
+    margin: 5px 5px 5px 0; 
+}
+
+a.image-right { 
+    float: right; 
+    margin: 5px 0 5px 5px; 
+}
