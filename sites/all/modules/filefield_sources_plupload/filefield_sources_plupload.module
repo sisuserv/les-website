@@ -12,9 +12,9 @@
 function filefield_sources_plupload_filefield_sources_info() {
   $source = array();
   $source['plupload'] = array(
-    'name' => t('Multi file (Plupload)'),
-    'label' => t('Multiple files'),
-    'description' => t('Upload multiple files.'),
+    'name' => t('Advanced upload widget (Plupload)'),
+    'label' => t('Advanced upload'),
+    'description' => t('Upload using enhanced file selection.'),
     'process' => 'filefield_sources_plupload_source_process',
   );
   return $source;
@@ -35,7 +35,7 @@ function filefield_sources_plupload_source_process($element, $form_state, $form)
   if ($field['cardinality'] == 1) {
     $element['filefield_plupload'] = array(
       '#weight' => 100.5,
-      '#markup' => '<p>' . t('This upload type can not be used on sigle value fields.') . '</p>',
+      '#markup' => '<p>' . t('This upload type can not be used on single value fields.') . '</p>',
       // Required for proper theming.
       '#filefield_source' => TRUE,
       '#prefix' => '<div class="filefield-source filefield-source-plupload clear-block">',
@@ -52,11 +52,15 @@ function filefield_sources_plupload_source_process($element, $form_state, $form)
     );
     $element['filefield_plupload']['pud'] = array(
       '#type' => 'plupload',
-      '#title' => t('Upload multiple files'),
+      '#title' => t('Select one or more files to upload'),
       // Even though filefield does validation on submit, this is required for
       // client side validation as well as proper file munging during upload.
       '#upload_validators' => $element['#upload_validators'],
-      '#plupload_settings' => array('max_file_size' => $max_filesize, 'chunk_size' => '1mb'),
+      '#plupload_settings' => array(
+          'max_file_size' => $max_filesize,
+          'chunk_size' => '1mb',
+          'runtimes' => 'html5,flash,silverlight,html4',
+        ),
       // We need our own value callback as we need access to $form_state.
       '#value_callback' => 'filefield_sources_plupload_element_value',
       '#process' => array('filefield_sources_plupload_element_process'),
