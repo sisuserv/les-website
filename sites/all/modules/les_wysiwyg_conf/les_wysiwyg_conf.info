@@ -1,0 +1,11 @@
+name = LES Wysiwyg Conf
+description = Configuration for Wysiwyg editor. At the moment just creates/configures Text Format that we'll use with Wysiwyg editor.
+core = 7.x
+package = LES
+version = 7.x-0.1
+project = les_wysiwyg_conf
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg_filter
+features[features_api][] = api:1
+features[filter][] = wysiwyg

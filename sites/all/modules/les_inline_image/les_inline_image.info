@@ -1,0 +1,11 @@
+name = LES Inline Image
+description = Inline image field for Basic content type. This includes all the necessary configuration for nice inline images.
+core = 7.x
+package = LES
+version = 7.x-0.1
+project = les_inline_image
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = image
+features[features_api][] = api:1
+features[field][] = node-page-field_inline_image
