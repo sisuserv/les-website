@@ -72,7 +72,7 @@ function les_slideshow_node_info() {
     'slideshow' => array(
       'name' => t('Slaidiseanss'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Lisa uus slaid esilehele.'),
       'has_title' => '1',
       'title_label' => t('Pealkiri'),
       'help' => '',

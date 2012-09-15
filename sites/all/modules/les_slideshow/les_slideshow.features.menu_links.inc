@@ -16,7 +16,11 @@ function les_slideshow_menu_default_menu_links() {
     'link_path' => 'node/add/slideshow',
     'router_path' => 'node/add/slideshow',
     'link_title' => 'Slaidiseanss',
-    'options' => array(),
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Lisa uus slaid esilehele.',
+      ),
+    ),
     'module' => 'system',
     'hidden' => '0',
     'external' => '0',
