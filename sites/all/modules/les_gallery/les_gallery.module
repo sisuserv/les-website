@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the LES Gallery feature.
+ */
+
+include_once 'les_gallery.features.inc';
