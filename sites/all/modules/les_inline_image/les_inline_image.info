@@ -1,11 +1,12 @@
 name = LES Inline Image
-description = Inline image field for Basic content type. This includes all the necessary configuration for nice inline images.
+description = Inline image field for Basic Page and Article content type.
 core = 7.x
 package = LES
-version = 7.x-0.1
+php = 5.2.4
+version = 7.x-0.2
 project = les_inline_image
 dependencies[] = features
-dependencies[] = field_sql_storage
 dependencies[] = image
 features[features_api][] = api:1
+features[field][] = node-article-field_inline_image
 features[field][] = node-page-field_inline_image
