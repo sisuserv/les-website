@@ -1,0 +1,17 @@
+name = LES Taxonomy
+description = Taxonomy for LES
+core = 7.x
+package = LES
+version = 7.x-0.1
+project = les_taxonomy
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = options
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = node-article-field_tegevused
+features[field][] = node-page-field_tegevused
+features[field][] = taxonomy_term-tegevused-description_field
+features[field][] = taxonomy_term-tegevused-name_field
+features[taxonomy][] = tegevused
