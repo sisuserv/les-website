@@ -78,7 +78,7 @@ function les_taxonomy_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 0,
+        'weight' => '5',
       ),
     ),
   );
