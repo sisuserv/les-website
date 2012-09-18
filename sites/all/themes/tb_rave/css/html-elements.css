@@ -277,3 +277,33 @@ img.galerii {
 .article ul.links li a.language-link{
 display:none;
 }
+
+.uudised img{
+	float: right;
+	border: 1px solid #DDD;
+	padding: 4px;
+	margin-left: 5px;
+}
+
+.uudistetiitel{
+	margin-top: 25px;
+}
+
+.uudistetiitel a{
+	font-size: 1.3em; /*normal articles have it 1.25*/
+	font-weight: normal;
+	color: #111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 1.25;
+	cursor: auto;
+	text-decoration: none;
+	margin: 0 0 5px;
+}
+
+.uudistetiitel a:hover{
+	text-decoration: none;
+	}
+
+.block-views-uudised-block h1, h2, h3, h4, h5, h6{
+	margin-top: 0px;
+}

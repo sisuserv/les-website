@@ -1,0 +1,17 @@
+name = LES News
+description = LES News view
+core = 7.x
+package = LES
+version = 7.x-0.1
+project = les_news
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = les_gallery
+dependencies[] = menu
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[image][] = news_thumbnail
+features[menu_links][] = main-menu:uudised
+features[views_view][] = uudised
