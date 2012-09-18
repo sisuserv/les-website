@@ -76,7 +76,7 @@ function les_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartype'] = 0;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartypenobg'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Väli: Sisu: Slaidi Link */
+  /* Field: Content: Slaidi Link */
   $handler->display->display_options['fields']['field_slider_link']['id'] = 'field_slider_link';
   $handler->display->display_options['fields']['field_slider_link']['table'] = 'field_data_field_slider_link';
   $handler->display->display_options['fields']['field_slider_link']['field'] = 'field_slider_link';
@@ -102,7 +102,7 @@ function les_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_slider_link']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_slider_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_slider_link']['field_api_classes'] = 0;
-  /* Väli: Sisu: Pealkiri */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -127,7 +127,7 @@ function les_slideshow_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Väli: Sisu: Slaidi Pilt */
+  /* Field: Content: Slaidi Pilt */
   $handler->display->display_options['fields']['field_slider_image']['id'] = 'field_slider_image';
   $handler->display->display_options['fields']['field_slider_image']['table'] = 'field_data_field_slider_image';
   $handler->display->display_options['fields']['field_slider_image']['field'] = 'field_slider_image';
@@ -153,11 +153,11 @@ function les_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_slider_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_slider_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_slider_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'slider_image_full',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_slider_image']['field_api_classes'] = 0;
-  /* Väli: Sisu: Slaidi Pilt */
+  /* Field: Content: Slaidi Pilt */
   $handler->display->display_options['fields']['field_slider_image_1']['id'] = 'field_slider_image_1';
   $handler->display->display_options['fields']['field_slider_image_1']['table'] = 'field_data_field_slider_image';
   $handler->display->display_options['fields']['field_slider_image_1']['field'] = 'field_slider_image';
@@ -184,23 +184,23 @@ function les_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_slider_image_1']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_slider_image_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_slider_image_1']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'slider_image_thumb',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_slider_image_1']['field_api_classes'] = 0;
-  /* Lühike kriteerium: Sisu: Postituse kuupäev */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Sisu: Avaldatud */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Sisu: Liik */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -213,13 +213,14 @@ function les_slideshow_views_default_views() {
   $translatables['slideshow'] = array(
     t('Master'),
     t('veel'),
-    t('Rakenda'),
+    t('Apply'),
     t('Lähtesta'),
     t('Sorteerimise alus'),
     t('Kasvav'),
     t('Kahanev'),
     t('[field_slider_link]'),
     t('Block'),
+    t('more'),
   );
   $export['slideshow'] = $view;
 
