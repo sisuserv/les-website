@@ -239,6 +239,7 @@ function les_gallery_field_default_fields() {
             ),
           ),
           'insert' => 1,
+          'insert_absolute' => FALSE,
           'insert_class' => 'galerii',
           'insert_default' => 'colorbox__gallery_thumbnail',
           'insert_styles' => array(
