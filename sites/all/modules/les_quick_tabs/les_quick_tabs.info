@@ -1,0 +1,11 @@
+name = LES Quick Tabs
+description = Tabs for Quick Tabs module.
+core = 7.x
+package = LES
+version = 7.x-0.1
+project = les_quick_tabs
+dependencies[] = ctools
+dependencies[] = quicktabs
+features[ctools][] = quicktabs:quicktabs:1
+features[features_api][] = api:1
+features[quicktabs][] = quick_tabs
