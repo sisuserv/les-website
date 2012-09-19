@@ -253,7 +253,7 @@ div.resizable-textarea textarea {
   background: url(../images/search-sm.png) no-repeat 0 50%; 
   border: none;
   cursor: pointer;
-  margin: 0;
+  margin: 0 0 0 5px;
   overflow: hidden;
   padding: 0;  
 }
@@ -270,7 +270,7 @@ div.resizable-textarea textarea {
 
 #search-block-form .form-text {
   background: none;
-  border: none;
+  border: 1px solid #ddd;
   color: #666;
   float:left;
   width: 83%;
