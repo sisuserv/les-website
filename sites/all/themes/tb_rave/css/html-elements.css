@@ -311,3 +311,11 @@ display:none;
 .contact-form{
 	padding: 0 0 0 18px;
 }
+
+.language-switcher-locale-url{
+	margin: 1em 0 1.5em 1.5em;
+	}
+	
+.language-switcher-locale-url li{
+    display:inline;
+}
