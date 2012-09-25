@@ -67,15 +67,6 @@
 ?>
 
 <div id="page" class="page-default"> <a name="Top" id="Top"></a>
-  <?php if($menu_bar = render($page['menu_bar'])): ?>
-  <!-- MAIN NAV -->
-  <div id="menu-bar-wrapper" class="wrapper">
-    <div class="container <?php print $grid; ?>">
-      <div class="grid-inner clearfix"> <?php print $menu_bar; ?> </div>
-    </div>
-  </div>
-  <!-- //MAIN NAV -->
-  <?php endif;?>
   
     <!-- HEADER -->
   <div id="header-wrapper" class="wrapper">
@@ -127,7 +118,15 @@
     </div>
   </div>
   <!-- //HEADER -->  
-  
+  <?php if($menu_bar = render($page['menu_bar'])): ?>
+  <!-- MAIN NAV -->
+  <div id="menu-bar-wrapper" class="wrapper">
+    <div class="container <?php print $grid; ?>">
+      <div class="grid-inner clearfix"> <?php print $menu_bar; ?> </div>
+    </div>
+  </div>
+  <!-- //MAIN NAV -->
+  <?php endif;?>
   <div id="main-wrapper" class="wrapper">
     <div class="container <?php print $grid; ?> clearfix">
 	 <?php if($messages || $page['help']): ?>

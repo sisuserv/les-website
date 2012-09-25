@@ -43,6 +43,7 @@
 #header-wrapper {
   position: relative;
   z-index: 10;
+  padding: 20px 0 0 0;
 }
 
 #header-wrapper .container {
@@ -109,7 +110,7 @@
  */
 #menu-bar-wrapper {
   margin: 0;
-  padding: 25px 0 0 0;
+  padding: 0 0 0 0;
   position: relative;
   z-index: 499; /* Drupal toolbar index is 600 */
 }
