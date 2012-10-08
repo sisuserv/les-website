@@ -14,7 +14,7 @@ function les_wysiwyg_conf_filter_default_formats() {
   $formats['wysiwyg'] = array(
     'format' => 'wysiwyg',
     'name' => 'WYSIWYG',
-    'cache' => '1',
+    'cache' => '0',
     'status' => '1',
     'weight' => '-10',
     'filters' => array(
@@ -37,6 +37,11 @@ function les_wysiwyg_conf_filter_default_formats() {
             'remote' => 0,
           ),
         ),
+      ),
+      'insert_view' => array(
+        'weight' => '0',
+        'status' => '1',
+        'settings' => array(),
       ),
       'wysiwyg' => array(
         'weight' => '0',
@@ -177,6 +182,11 @@ img[!src|alt|title|class|style|width|height|typeof]',
             16 => 'colorbox',
             18 => 'colorbox-insert-image',
             20 => 'galerii',
+            22 => 'uudiskiri',
+            24 => 'uudiskiri-pilt',
+            26 => 'uudiskiri-pealkiri',
+            28 => 'uudiskiri-sisu',
+            30 => 'uudiskiri-row',
           ),
           'rule_valid_ids' => array(),
           'rule_style_urls' => array(),

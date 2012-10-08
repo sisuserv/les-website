@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the LES Newsletter feature.
+ */
+
+include_once 'les_newsletter.features.inc';

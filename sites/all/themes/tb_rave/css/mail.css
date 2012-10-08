@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background: url(../images/body-bg.gif) 0 0 repeat-x #dedede;
   color: #333;
   line-height: 1.5; /* Unit-less line-height means line height can scale. */
 }
@@ -254,8 +253,8 @@ td.container td.category {
 }
 
 img.inline {
-	border: 1px solid #E2E2E2;
-	padding: 2px;
+    border: 1px solid #E2E2E2;
+    padding: 2px;
 }
 
 a.image-left { 
@@ -268,56 +267,8 @@ a.image-right {
     margin: 5px 0 5px 5px; 
 }
 
-img.galerii {
-	
-	border: 1px solid #E2E2E2;
-    margin: 2px 2px 2px 2px; 
-}
-
 .article ul.links li a.language-link{
 display:none;
-}
-
-.uudised img{
-	float: right;
-	border: 1px solid #DDD;
-	padding: 4px;
-	margin-left: 5px;
-}
-
-.uudistetiitel{
-	margin-top: 25px;
-}
-
-.uudistetiitel a{
-	font-size: 1.3em; /*normal articles have it 1.25*/
-	font-weight: normal;
-	color: #111;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	line-height: 1.25;
-	cursor: auto;
-	text-decoration: none;
-	margin: 0 0 5px;
-}
-
-.uudistetiitel a:hover{
-	text-decoration: none;
-	}
-
-.block-views-uudised-block h1, h2, h3, h4, h5, h6{
-	margin-top: 0px;
-}
-
-.contact-form{
-	padding: 0 0 0 18px;
-}
-
-.language-switcher-locale-url{
-	margin: 1em 0 1.5em 1.5em;
-	}
-	
-.language-switcher-locale-url li{
-    display:inline;
 }
 
 .uudiskiri-row {
